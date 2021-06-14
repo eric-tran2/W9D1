@@ -4,8 +4,6 @@ const Util = {
     Surrogate.prototype = parentClass.prototype;
     childClass.prototype = new Surrogate();
     childClass.prototype.constructor = childClass;
-    console.log(parentClass.prototype);
-    console.log(childClass.prototype);
   },
   randomVec(length) {
     const deg = 2 * Math.PI * Math.random();

@@ -5,7 +5,7 @@ function Asteroid(options){
   options.vel ||= Util.randomVec(5);
   options.radius ||= 50;
   options.color ||= "blue";
-  MovingObject.call(this,options) // super call
+  MovingObject.call(this, options) // super call
 }
 
 Util.inherits(Asteroid, MovingObject);
